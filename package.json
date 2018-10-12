@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Open a Github pull request based on your current branch",
   "main": "index.js",
+  "bin": "cli.js",
   "scripts": {
-    "test": "node test.js | faucet"
+    "test": "echo \"Not in this repo :-x\""
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,11 @@
   "bugs": {
     "url": "https://github.com/TehShrike/ezpr/issues"
   },
-  "homepage": "https://github.com/TehShrike/ezpr#readme"
+  "homepage": "https://github.com/TehShrike/ezpr#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "github-url-from-git": "1.5.0",
+    "opn": "5.4.0",
+    "shell-tag": "1.0.4"
+  }
 }
