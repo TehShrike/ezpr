@@ -1,0 +1,27 @@
+{
+  "name": "ezpr",
+  "version": "1.0.0",
+  "description": "Open a Github pull request based on your current branch",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js | faucet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TehShrike/ezpr.git"
+  },
+  "keywords": [
+    "gh",
+    "github",
+    "pr",
+    "pull",
+    "request",
+    "cli"
+  ],
+  "author": "TehShrike",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/TehShrike/ezpr/issues"
+  },
+  "homepage": "https://github.com/TehShrike/ezpr#readme"
+}
