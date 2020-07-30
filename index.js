@@ -6,7 +6,7 @@ const getCurrentBranch = () => sh`git rev-parse --abbrev-ref HEAD --`.split(`\n`
 module.exports = (remote = `origin`) => {
 	const currentBranch = getCurrentBranch()
 
-	sh`git push ${ remote } ${ currentBranch }`
+	sh`git push -u ${ remote } ${ currentBranch }`
 
 	const remoteUrl = sh`git remote get-url --push ${ remote }`.trim()
 
