@@ -1,9 +1,9 @@
-const sh = require(`shell-tag`)
-const gitToGithub = require(`github-url-from-git`)
+import sh from 'shell-tag'
+import gitToGithub from 'github-url-from-git'
 
 const getCurrentBranch = () => sh`git rev-parse --abbrev-ref HEAD --`.split(`\n`)[0]
 
-module.exports = (remote = `origin`) => {
+export default (remote = `origin`) => {
 	const currentBranch = getCurrentBranch()
 
 	sh`git push -u ${ remote } ${ currentBranch }`

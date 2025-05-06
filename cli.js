@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-const getPrUrl = require(`./index.js`)
-const open = require(`opn`)
+import getPrUrl from './index.js'
+import open from 'open'
 
 const [ ,, remote ] = process.argv
 
